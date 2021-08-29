@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		89F992BA26DBEB3100B5ED66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F992B926DBEB3100B5ED66 /* AppDelegate.swift */; };
 		89F992BC26DBEB3100B5ED66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F992BB26DBEB3100B5ED66 /* SceneDelegate.swift */; };
-		89F992BE26DBEB3100B5ED66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F992BD26DBEB3100B5ED66 /* ViewController.swift */; };
 		89F992C126DBEB3100B5ED66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89F992BF26DBEB3100B5ED66 /* Main.storyboard */; };
 		89F992C326DBEB3100B5ED66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89F992C226DBEB3100B5ED66 /* Assets.xcassets */; };
 		89F992C626DBEB3100B5ED66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89F992C426DBEB3100B5ED66 /* LaunchScreen.storyboard */; };
+		89F992CE26DBED8900B5ED66 /* EmodjiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F992CD26DBED8900B5ED66 /* EmodjiTableViewController.swift */; };
+		89F992D026DBF5EE00B5ED66 /* EmodjiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F992CF26DBF5EE00B5ED66 /* EmodjiTableViewCell.swift */; };
+		89F992D226DBF7B300B5ED66 /* EmodjiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F992D126DBF7B300B5ED66 /* EmodjiModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		89F992B626DBEB3100B5ED66 /* EmodjiReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmodjiReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F992B926DBEB3100B5ED66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89F992BB26DBEB3100B5ED66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		89F992BD26DBEB3100B5ED66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		89F992C026DBEB3100B5ED66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89F992C226DBEB3100B5ED66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89F992C526DBEB3100B5ED66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89F992C726DBEB3100B5ED66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89F992CD26DBED8900B5ED66 /* EmodjiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmodjiTableViewController.swift; sourceTree = "<group>"; };
+		89F992CF26DBF5EE00B5ED66 /* EmodjiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmodjiTableViewCell.swift; sourceTree = "<group>"; };
+		89F992D126DBF7B300B5ED66 /* EmodjiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmodjiModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +62,9 @@
 			children = (
 				89F992B926DBEB3100B5ED66 /* AppDelegate.swift */,
 				89F992BB26DBEB3100B5ED66 /* SceneDelegate.swift */,
-				89F992BD26DBEB3100B5ED66 /* ViewController.swift */,
+				89F992CD26DBED8900B5ED66 /* EmodjiTableViewController.swift */,
+				89F992CF26DBF5EE00B5ED66 /* EmodjiTableViewCell.swift */,
+				89F992D126DBF7B300B5ED66 /* EmodjiModel.swift */,
 				89F992BF26DBEB3100B5ED66 /* Main.storyboard */,
 				89F992C226DBEB3100B5ED66 /* Assets.xcassets */,
 				89F992C426DBEB3100B5ED66 /* LaunchScreen.storyboard */,
@@ -137,9 +143,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89F992BE26DBEB3100B5ED66 /* ViewController.swift in Sources */,
+				89F992CE26DBED8900B5ED66 /* EmodjiTableViewController.swift in Sources */,
 				89F992BA26DBEB3100B5ED66 /* AppDelegate.swift in Sources */,
 				89F992BC26DBEB3100B5ED66 /* SceneDelegate.swift in Sources */,
+				89F992D026DBF5EE00B5ED66 /* EmodjiTableViewCell.swift in Sources */,
+				89F992D226DBF7B300B5ED66 /* EmodjiModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
