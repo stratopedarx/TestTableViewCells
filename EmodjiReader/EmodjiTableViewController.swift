@@ -8,23 +8,42 @@ class EmodjiTableViewController: UITableViewController {
     ]
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
         self.title = "Emodji Reader"
         self.navigationItem.leftBarButtonItem = self.editButtonItem
     }
-    
-    // MARK: - Table view data source
+
+    @IBAction func unwindSegue(segue: UIStoryboardSegue) {
+        guard segue.identifier == "saveSegue" else { return }
+        let sourceVC = segue.source as! NewEmodjiTableViewController
+        let emodji = sourceVC.emodji
+        
+        if let selectedIndexPath = tableView.indexPathForSelectedRow {
+            objects[selectedIndexPath.row] = emodji
+            tableView.reloadRows(at: [selectedIndexPath], with: .fade)
+        } else {
+            let newIndexPath = IndexPath(row: objects.count, section: 0)
+            objects.append(emodji)
+            tableView.insertRows(at: [newIndexPath], with: .fade)
+        }
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        guard segue.identifier == "editEmodji" else { return }
+        let indexPath = tableView.indexPathForSelectedRow!
+        let emodji = objects[indexPath.row]
+        // сначала добираемся до навигейшн вию контроллер, а потом до нью эмоджи табле вью контроллер
+        let navigationVC = segue.destination as! UINavigationController
+        let newEmodjiVC = navigationVC.topViewController as! NewEmodjiTableViewController
+        newEmodjiVC.emodji = emodji
+        newEmodjiVC.title = "Edit"
+    }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return objects.count
     }
     

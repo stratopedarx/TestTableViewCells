@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8934D76A26DC96E200579F98 /* NewEmodjiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8934D76926DC96E200579F98 /* NewEmodjiTableViewController.swift */; };
 		89F992BA26DBEB3100B5ED66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F992B926DBEB3100B5ED66 /* AppDelegate.swift */; };
 		89F992BC26DBEB3100B5ED66 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F992BB26DBEB3100B5ED66 /* SceneDelegate.swift */; };
 		89F992C126DBEB3100B5ED66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89F992BF26DBEB3100B5ED66 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8934D76926DC96E200579F98 /* NewEmodjiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEmodjiTableViewController.swift; sourceTree = "<group>"; };
 		89F992B626DBEB3100B5ED66 /* EmodjiReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmodjiReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89F992B926DBEB3100B5ED66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89F992BB26DBEB3100B5ED66 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				89F992B926DBEB3100B5ED66 /* AppDelegate.swift */,
 				89F992BB26DBEB3100B5ED66 /* SceneDelegate.swift */,
+				8934D76926DC96E200579F98 /* NewEmodjiTableViewController.swift */,
 				89F992CD26DBED8900B5ED66 /* EmodjiTableViewController.swift */,
 				89F992CF26DBF5EE00B5ED66 /* EmodjiTableViewCell.swift */,
 				89F992D126DBF7B300B5ED66 /* EmodjiModel.swift */,
@@ -147,6 +150,7 @@
 				89F992BA26DBEB3100B5ED66 /* AppDelegate.swift in Sources */,
 				89F992BC26DBEB3100B5ED66 /* SceneDelegate.swift in Sources */,
 				89F992D026DBF5EE00B5ED66 /* EmodjiTableViewCell.swift in Sources */,
+				8934D76A26DC96E200579F98 /* NewEmodjiTableViewController.swift in Sources */,
 				89F992D226DBF7B300B5ED66 /* EmodjiModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
